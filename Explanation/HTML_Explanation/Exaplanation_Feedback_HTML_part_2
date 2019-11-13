@@ -1,0 +1,43 @@
+1.) What we have learned previously?
+
+We now know, how to create a HTML page and associate that with a css. Few important points to remember ->
+
+	1.) You can load more than 1 css in a html page
+	2.) We now know the concept of default class and custom class.
+	3.) We know and learned some of the CSS properties.
+	4.) You know how to open an external website from the page.
+
+2.) What to expect and what we should focus on next ?
+
+	1.) Learning about more CSS propeties
+	2.) Learning nested css custom class
+	3.) Learning about template design
+
+Feedback:
+
+ 1.) Basic class like body, p, h1 etc if the name is same and loaded into same HTML then it will overriden to last css loaded in the page. What it means
+
+ <link rel="stylesheet" href="newstyle.css">
+  <link rel="stylesheet" type="text/css" href="mystyle.css"> 
+
+ Now, if whatever property you set into body {} in mystyle.css that will be applied to index.html not the body {} set into newstyle.css
+
+ 2.) Picture should be renderd into the webpage itself, it should not get openned as an external image untill thats the requirement. Any external link should be openned externally, in case of Youtube and Flipkart that is fine, but not in case of Dog pics, because you are loading them internally.
+
+ 3.) Registration form page, I really like. Specially you have used buttons and text input field. Which is nice. Good job !
+
+ 
+ Learning Wise = [Good to have, HTML Tag List in w3schools]
+ 
+ Next Task :
+
+ 1.) Create a Gallery like view for cuteness overload section [Grid View. Hints : check w3schools.]
+ 2.) HTML pages which are href should not be openned in external tabs. It should open in stacks. If I hit back then I should return in Home page or the previous page whichever is the case.
+ 3.) Explore div class, nested div class and start to play around with it. Example is added.
+ 4.) Align Left hand side navbar with topbar. Both the top should be same. [Bug Added]
+ 5.) Improve Registration page overall design. What to expect ->
+ 		A.) Center Align bottom 3 buttons
+ 		B.) Add button colors with curve shaped design.Make the corner radius more and button size 2X.
+ 		C.) Make the background color full screen.
+ 		D.) Use custom class to make styling. Textbox, radiobutton, checkbox should be styled.
+ 		E.) Replicate Top Bar in the registration page, so that Without clicking back also, user can go anywhere.

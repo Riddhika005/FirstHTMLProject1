@@ -3,10 +3,23 @@ body {
   font-family: Georgia, "Times New Roman",
         Times, serif;
   color: white;
-  background-color: #DA5133 }
+  background-color: #DA5133;
+  margin-top: 6em; }
 h1 {
   font-family: Helvetica, Geneva, Arial,
         SunSans-Regular, sans-serif }
+/* Generic Unorderd list class. It is base */
+ul.topbar{
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  width: 75%;
+}
+
+/* When Applying navbar to Unordered list, then we can use this class as ul class="navbar" */        
 ul.navbar {
   list-style-type: none;
   padding: 0;
@@ -19,16 +32,86 @@ ul.navbar {
 ul.navbar li {
   background: white;
   margin: 0.5em 0;
-  padding: 0.3em;
-  border-right: 1em solid black }
+  padding: 1em;
+  border-right: 1em solid black;
+  width: 60%; }
 ul.navbar a {
   text-decoration: none }
 a:link {
-  color: blue }
+  color: black }
 a:visited {
   color: purple }
+
+/* When applying link ref to HTML. This is base class */
+a {
+  background-color: white;
+  
+}  
+
+a.customlink {
+  margin-top: 0;
+  padding: 1em;
+}
+
+/* Basic active class to let the user know what is selected  */
+.active {
+  background-color: white;
+}
+
+/* When applying list to HTML. This is base class */
+li {
+  float: left;
+}
+
+/* When applying list class with an "a" tag */
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li.customhref {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* When applying list class with an "a" tag while hovering with mouse */
+li a:hover {
+  background-color: red;
+}
+
+
+
   
 .signature {
   margin-top: 1em;
   padding-top: 1em;
   border-top: thin dotted }
+
+.learning {
+  color: white;
+}
+
+.learning.feedback {
+  margin : 2em;
+}
+
+
+
+/* Color classes */
+
+.blue {
+  color: blue;
+}
+
+.red {
+color: #80301f;
+}
+
+.white {
+color: white;
+}
