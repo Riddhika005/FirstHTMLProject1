@@ -1,0 +1,169 @@
+1. Any web based or front project should have a file named "index.html". This is the starting point (Usually) of web based project. A web based project typically consist of 3 main components. These are, Javascript (Where logic resides), CSS (Styling and responsive design), HTML (The body of the page where css going to get applied).
+
+2. Any web based framework like Angular JS or React JS is built on top of these components and logically these are wrapper (Wrapper mane base holo javascript and setake extend kore kichu framework banano) of the base framework. Each framework has its own advantage and disadvantage. Its upto the developer which one to use for a particular project.  
+
+CSS + HTML Very Very Basic 
+
+What is the full form of CSS ?
+
+CSS means Cascading Style Sheets. It is a style sheet language, used to represent the Document / Form written in HTML. [In HTML word, a single html page is called Document]
+Any HTML, page cant be displayed without CSS [Technically it can be displayed but no styling will be associated].
+
+Any one can insert styling via CSS in 3 different ways. These are A. Internal B. Extrenal C. Inline
+Very nice explanation : [https://www.c-sharpcorner.com/UploadFile/e6a884/types-of-css/]. CSS3 is most commonly used CSS version in industry.
+
+
+Explanation of the Project =>
+
+CSS individual curly braces explanation
+
+body {
+  padding-left: 11em;
+  font-family: Georgia, "Times New Roman",
+        Times, serif;
+  color: white;
+  background-color: #DA5133 }
+
+  It is the definition of the Body of your html page. This is a class as well. all inside the curly braces are called "properties". There are lot of properties [More info: https://www.w3schools.com/cssref/default.asp]
+
+padding = It means giving padding towards the object. ekhane, only left padding use kora hoeche. Padding is not margin.
+font-family = whole page going to use the 3 different fonts.
+color = self explanatory [Text color]
+background color = self explanatory
+
+
+h1 {
+  font-family: Helvetica, Geneva, Arial,
+        SunSans-Regular, sans-serif }
+
+
+h1 =  mane holo font size. You can use h2, h3, h4 etc.
+
+ul = means Unordered list. It is typically used to make bullet points.
+
+Example :
+
+ul.a {
+  list-style-type: circle;
+}
+
+<ul class="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+It will print in bullet points. Dot er por jeta lekha hoi seta custom class...
+
+Now, I have used ul.navbar. navbar meaning Navigation bar. 
+
+ul.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  width: 9em }
+  
+ul.navbar li {
+  background: white;
+  margin: 0.5em 0;
+  padding: 0.3em;
+  border-right: 1em solid black }
+ul.navbar a {
+  text-decoration: none }
+a:link {
+  color: blue }
+a:visited {
+  color: purple }
+
+  First ul.navbar means, navbar basic class styling.
+  Second ul.navbar li means, it will be having list and the styling is about the list items.
+  ul.navbar a means, it will not show any text decoration for the list items. [a is used for hyperlink]
+  a:link means, for the invisited links it will be shown as blue.
+
+
+I have also used one custom class. In CSS you can create your own class and styling. Here the custom class is named as signature. It should start from DOT.
+
+.signature {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: thin dotted }
+
+
+JavaScript Very very Basic
+
+What is javascript ?
+
+JavaScript, often abbreviated as JS, is a high-level, interpreted scripting language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+
+ A. What is scripting language ?
+  Scipring language does not require compilation. It is interpreted when its running. That means, before running a C program a compiler checks whether it has any syntax error or something but in case of javascript you can write directly. But when it is run into web browser (Mozilla/Chrome etc) and if it has any error then it will throw error.
+
+ B. What is ECMAScript specification ?
+ 
+ ECMA script is a standardise scripting methodology. Any scripting language has to follow the standart of the same.
+
+ C. What is dynamic Typing ?
+
+ As previously told, Javascript does not need compilation before deployment. So, a programming language is called dynamically typed when majority of its type checking is done at runtime. After deployment.
+
+ D. What is meant by type checking ?
+
+ Let's look at this C code
+
+static int num, sum; // explicit declaration 
+num = 5; // now use the variables 
+sum = 10; 
+sum = sum + num; 
+
+To print the sum, one needs to declare its type so that both integers can be summed up. This is staticaly type.
+
+Now, lets look at Javascript
+
+var price1 = 5;
+var price2 = 6;
+var total = price1 + price2;
+
+Now, total will hold integer.
+
+But, lets do in this way as well,
+
+var price1 = 5;
+var price2 = 6;
+var total = price1 + price2;
+total = "Riddhika";
+
+Now, if you print total, it will print your name :) 
+
+E. What is meant by prototype based object orientation ?
+
+For a real-world analogy, if you were to build a chair, you would first create a blueprint on paper and then manufacture chairs based on this blueprint. The blueprint here is the class, and chairs are the objects. If you wanted to build a rocking chair, you would take the blueprint, make some modifications, and manufacture rocking chairs using the new blueprint.
+
+Lets check a javascript example :
+
+var genericUser = Object.create(null); [Object is mother of all class. Anything and everything of any data type can be cast to Object class]
+
+So, here we have a created a variable of genericUser which is a Object. Now,
+
+genericUser.firstname = 'Riddhika';
+genericUser.surname = 'Chatterjee';
+genericUser.description = function() {
+	return 'First Name: ' + this.firstname + '; Last Name: ' + this.surname;
+};
+
+Now, genericUser is still an Object but holds firstName and lastName. Bujhli ?
+
+
+F. What is First-Class function ?
+
+In one sentence, by using javascript you can assign a function to a variable. Example :
+
+Assign a function to a variable
+
+const foo = function() {
+   console.log("foobar");
+}
+// Ekhane foo ekta variable hole, as its hold a function you can invoke the function as below.
+foo(); 
