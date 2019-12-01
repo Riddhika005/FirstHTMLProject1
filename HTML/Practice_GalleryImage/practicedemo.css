@@ -1,0 +1,32 @@
+body{
+	margin:0;
+	}
+
+	.iconbar
+{
+	/*width:90px;*/  /* Set a specific width */		width:100%; /* Full-width */
+	background-color: #555;					/* Dark-grey background */
+							overflow:auto;	/* Overflow due to float */
+}
+
+.iconbar a {
+	/*display:block;*/ /* Make the links appear below each other instead of side-by-side */	float:left; /* Float links side by side */ 
+																					width:17%;	/* Equal width (5 icons with 10% width each = 100%) */
+	
+
+
+	text-align:center;	/* Center-align text */
+	/*padding:20px;		/* Add some padding */ padding:12px 0; /* Some top and bottom padding */
+	font-size:40px;		/* Increased font-size */
+	color:white;		/* White text color */
+	transition: all 0.3s ease;	/* Add transition for hover effects */
+
+}
+
+.iconbar a:hover {
+	background-color:black;	/* Add a hover color */
+}
+
+.active {
+	background-color:green;	/* Add an active/current color */
+}

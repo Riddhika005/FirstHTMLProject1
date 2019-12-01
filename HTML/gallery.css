@@ -1,5 +1,6 @@
 body{
 background-color:grey;
+width:100%;
 }
 
 	h1
@@ -20,28 +21,82 @@ p{
 }
 
 .galleryrow{
-	display:flex;
-	width:100%;
+	display:inline-block;
+	width:100%;  /*box-sizing: border-box; text-transform:uppercase; margin: 60px auto; display:flex; flex-wrap:wrap-reverse; justify-content:center;*/
+
+
 }
 .gallery
 {
-
+	display:inline-block;
 	margin:5px;
-	width:180px;
-	border: 1px solid #ccc;
+	width:23%; /*(100/23 and the rest will go into spaces and margins)*/
+	height:300px; /*I have included height inside gallery to make all images of different height and width SAME*/
+	overflow:hidden;
+	border-radius: 10px; /*curve even after hovering*/ 
+
+
+}
+img{
+	border:7px groove pink;
+	border-style:dotted dashed groove;
+	width:300px; 
+	height:300px;
+	border-radius: 10px;
+	cursor:pointer;
+
+
 }
 	
-		/*width:20px;
-	height:20px;
-	
-	
-}
-div{
-	margin-left:20px;
-	width:100%;
+img:hover{
+	transform:scale(2,2) rotate(15deg);
+	transition:.3s transform;
 }
 
-img{
-	width:100%;
-	border-radius:5px;
+@media only screen and (max-width: 600px) {
+	.gallery
+{
+	
+	width:80%;
+
+}
+	}
+
+	@media only screen and (min-width:601px) and (max-width:900px) {
+	.gallery{
+
+		width:60%;
+		
+	}
+	}
+
+@media only screen and (min-width:901px) and (max-width:1500px) {
+	.galleryrow{
+
+		width:40%;
+		
+	}
+}
+
+.grid{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/*.grid div:nth-child(1) {
+	background-color: red;
+
+}
+
+.grid div:nth-child(2) {
+	background-color: blue;
+
+}
+.grid div:nth-child(3) {
+	background-color: pink;
+
+}
+.grid div:nth-child(4) {
+	background-color: white;
+
 }*/

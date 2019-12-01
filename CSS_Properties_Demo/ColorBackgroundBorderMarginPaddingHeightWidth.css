@@ -1,0 +1,215 @@
+
+.quote1{
+	text-decoration:underline;
+	text-transform:uppercase;
+}
+.quote2{
+	text-decoration:line-through;
+	text-transform:lowercase;
+}
+.quote3{
+	text-decoration:overline;
+	text-transform:capitalize;
+}
+
+
+/*.body{
+	background-color: lightblue;
+}*/
+
+
+
+body {
+	/*background-image:url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/colorful-of-dahlia-pink-flower-in-beautiful-garden-royalty-free-image-825886130-1554743243.jpg');*/
+	background:url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/colorful-of-dahlia-pink-flower-in-beautiful-garden-royalty-free-image-825886130-1554743243.jpg') scroll;
+	background-repeat: repeat-y;
+	/*background-repeat: no-repeat;*/
+	/*background-position: right top;*/
+	/*background-attachment: fixed;*/
+	/*background-attachment: scroll;*/
+	/*background: red url("img_tree.png") no-repeat right top;*/
+	/*background-size:*/
+}
+
+
+.div1
+{
+	color:white;
+	background-color:dodgerblue;
+	/*border: 5px solid black;*/
+	border-top-style: dotted;
+  	border-right-style: dashed;
+  	border-bottom-style: double;
+  	border-left-style: solid;
+  	border-width:5px;
+  	border-color:black;
+  	border-radius: 5px;
+	/*border-width (border-width: 2px 10px 4px 20px;), border-style:dotted,dashed,solid,double,groove,ridge,inset,outset,none,hidden*/
+	/*border-width border-style (required) border-color , border-style: dotted solid; border-left: 6px solid red;*/
+	height:80px;
+	width:100%;
+	font-size:23px;
+	margin:auto;
+
+}
+
+.div2{
+	font-size:23px;
+	text-indent:200px;
+
+}
+
+.div3
+{
+	
+  font-size:23px;
+  color:blue;
+  border: 1px solid #0033FF;
+  margin-top: 50px;
+  margin-right: 70px; /*(margin collapse - Top and bottom margins of elements are sometimes collapsed into a single margin 
+  						that is equal to the largest of the two margins.)*//* margin: 25px 50px 75px 100px;*/
+  margin-bottom: 30px;
+  margin-left: 60px;
+  background-color: white;
+  padding-top:30px; /*padding: 25px 50px 75px 100px;*/
+  padding-right:50px;
+  padding-bottom:20px;
+  padding-left:15px;
+  width:500px;
+  box-sizing: border-box;
+  text-align:right;
+  text-shadow: 3px 2px red; /*specifies the position of the horizontal shadow (3px), the position of the vertical shadow (2px) and the color of the shadow (red):*/
+}
+.paragraph1
+{
+	border:10px dashed maroon;
+	background-color:powderblue;
+	color:#3300FF;
+	font-size:25px;
+	height:300px;
+	width:1000px;
+	text-align:justify;
+	font-family: arial;
+	font-style:italic;
+	font-weight:bold;
+}
+
+.paragraph2
+{
+	border:10px dashed maroon;
+	background-color:powderblue;
+	color:#3300FF;
+	font-size:25px;
+	height:400px; /*min-height,min-width*/
+	max-width:1000px; /*he problem with the <div> above occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.
+				Using max-width instead, in this situation, will improve the browser's handling of small windows.*/
+
+/*The total width of an element should be calculated like this:
+Total element width = width + left padding + right padding + left border + right border + left margin + right margin
+The total height of an element should be calculated like this:
+Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin*/
+/*outline-style
+outline-color
+outline-width
+outline-offset
+outline-----the element's total width and height is not affected by the width of the outline.*/
+margin-left:15px;
+outline: 5px dashed green;
+outline-offset: 15px;
+}
+.quote4
+{
+	font-size:30px;
+letter-spacing: 7px;
+line-height: 0.8;  /*The line-height property is used to specify the space between lines*/
+word-spacing: 20px;
+}
+
+.quote5
+{
+	font-size:30px;
+letter-spacing: -3px;
+line-height: 1.8;
+}
+.quote6
+{
+	direction:rtl;
+	color:green;
+	font-size:35px;
+
+}
+
+.quote7
+{
+	font-size:10vw;
+	font-size:40px; /*Resize the browser window to see how the text size scales.
+					Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.*/
+}
+
+.quote8
+{
+	font-variant:small-caps;
+	color:#6600FF;
+	
+}
+.coffee
+{
+	font-size: 30px;
+}
+.link a {
+	font-size:60px;
+	display: inline-block;
+	text-align: center;
+	padding:20px;
+
+}
+a:link
+{
+	color:red;
+	text-decoration: none;
+	background-color: yellow;
+	
+
+}
+a:visited
+{
+	color:black;
+	text-decoration: none;
+	background-color: orange;
+}
+
+
+a:hover
+{
+	color:hotpink;
+	text-decoration: underline;
+	background-color: lightgreen;
+}
+
+a:active
+{
+	color:blue;
+	text-decoration: underline;
+	background-color: dodgerblue;
+}
+
+/*a:hover, a:active {
+  background-color: red;
+}*/
+
+.unordered1 {
+	font-size:20px;
+	list-style-type: square; /*circle*/
+}
+
+.ordered 
+{
+	font-size:20px;
+list-style-type: upper-roman; /*lower-alpha;*/
+}
+
+.unordered2 {
+	list-style-image: url('data:image/png');
+}
+
+
