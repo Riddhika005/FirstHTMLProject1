@@ -1,0 +1,19 @@
+I must say, I am impressed with your dedication. Wonderful quotes, Romantic + Inspiring. I belive now you are getting some positive energy. :) 
+
+Feedbacks :
+
+1. div2 and div3 both have common elements of font-size:23px;. In this scenario, the common elements should be on the base div and you should make child divs to inherit common elements and have other properties defined to that.
+
+2. Start using Inheritance more rather than repeating same statement again and again.
+
+3. There is something called css variables. Although its part of advance, but you should have asked me "How can I repeat same stuff again and again?". Let's say you have a font size 23 px that you want to use lot of times. Create a variable on root, and use it everywhere. Ref [https://www.w3schools.com/css/css3_variables.asp] 
+
+4. The entire page is not responsive. Make it responsive, when I trim it down, paragraph 1 and 2 gets crumbled on each other. Try to makeit non-overlaping. [Suggestion]. Quote 7 is ideal example of that. Bravo :)
+
+5. Gallery portion is still not complete. [Pending from 2 weeks !!]. The properties what you have learned, you should now be able to create a gallery. Please give it a try with a smile :)
+
+6. Remove the classes or files which are not in use or not started. It will keep the repo clean and also follow sub-folder structure. like next time when you gonna commit create a sub folder named "Part 4" and commit. Bujhli ?
+
+7. Icon bar should be part of Navigation bar. It is lying like an orphan children :(
+
+Rest, all looks good. Vishon vishon valo. Yes, I would now like to have a Black coffee. Please, madam coffee khawoaben ?:P
